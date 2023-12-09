@@ -25,11 +25,11 @@ export default function Signup() {
     setError('')
     setLoading(true)
     await Signup(emailRef.current.value, passwordRef.current.value)
-    setLoading(false)
+    
   } catch {
     setError('failed to create an account')
   }
- 
+  setLoading(false)
 }
 
 return (
