@@ -37,6 +37,7 @@ return (
    <Card>
     <CardBody>
       <h2 className='text-center mb-4'>Sign Up</h2>
+      {currentUser && currentUser.email}
       {error && <Alert variant='danger'>{error}</Alert>}
       <Form onSubmit={handleSubmit}>
         <FormGroup id='email'>
