@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react'
 import {Form, Button, Card, CardBody, FormGroup, Alert} from 'react-bootstrap'
 import { UseAuth } from '../contexts/AuthContext'
+import { Link, useHistory } from "react-router-dom"
 
 
 
@@ -11,6 +12,7 @@ export default function Signup() {
   const {Signup} = UseAuth()
   const [error, setError] = useState('')
   const [loading, setLoading] = useState('false')
+  const history = useHistory()
 
 
 
@@ -56,9 +58,9 @@ return (
       </Form>
     </CardBody>
    </Card>
-   <div className='w-100 text-centre mt-2'>
-    Already have an account? Log In 
-   </div>
+   <div className="w-100 text-center mt-2">
+        Already have an account? <Link to="/login">Log In</Link>
+      </div>
     </>
   )
 
