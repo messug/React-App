@@ -1,4 +1,4 @@
-import { firebase } from "./firebase"
+import Firebase  from "./firebase"
 import "firebase/auth"
 
 const app = firebase.initializeApp({
