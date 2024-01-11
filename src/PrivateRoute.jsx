@@ -14,3 +14,6 @@ export default function PrivateRoute({ component: Component, ...rest }) {
     ></Route>
   )
 }
+
+
+// working on the files and fixing the issues and 
